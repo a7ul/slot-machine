@@ -28,6 +28,6 @@ const router = (req, res) => {
       return res.end(JSON.stringify(notFoundHandler()));
     }
   }
-}
+};
 
 module.exports = router;

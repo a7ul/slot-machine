@@ -2,33 +2,50 @@ body{
   padding: 0;
   margin: 0;
   height: 100vh;
+  font-family: Helvetica;
 }
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 100%
+  height: 100%;
 }
 
 #win-message {
   font-size: 3em;
-  font-family: Helvetica;
 }
 
 .image-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-around;
   align-self: stretch;
 }
 
 .result-image {
-  display: flex;
   width: 80px;
-  padding: 10px 0;
 }
 
-.retry-image {
-  width: 60px
+.retry-button-container {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: column;
+}
+
+#retry-button {
+  width: 60px;
+  cursor: pointer;
+}
+
+#retry-button:active {
+  transform: rotateZ(120deg);
+}
+
+#message {
+  opacity: 0;
+  color: #f19e11;
+  padding-bottom: 5px
 }

@@ -11,7 +11,7 @@ const randomResultHandler = () => {
   }
 
   return {result, bonus};
-}
+};
 
 const staticFileHandler = (filePath) => helpers.readFile(filePath);
 
@@ -19,4 +19,4 @@ module.exports = {
   notFoundHandler,
   randomResultHandler,
   staticFileHandler
-}
+};

@@ -10,8 +10,10 @@
       "before": false,
       "after": true
     }],
+    semi: ["error", "always"]
   },
   "globals":{
-    "window": true
+    "window": true,
+    "document": true
   }
 }
