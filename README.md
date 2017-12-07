@@ -8,7 +8,9 @@ A game written in pure Javascript and Node JS
 
 To Play :
 
-(Hosted on Heroku) https://slot-machine.herokuapp.com/public/index.html
+(Hosted on Heroku)
+
+https://goo.gl/a2SJiF or https://slot-machine.herokuapp.com/public/index.html
 
 
 or
