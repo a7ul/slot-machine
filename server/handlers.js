@@ -1,6 +1,6 @@
 const helpers = require('./helpers');
 
-const notFoundHandler = () => ({message: 'Invalid route!'});
+const notFoundHandler = () => ({message: 'Invalid route! Try /public/index.html'});
 
 const randomResultHandler = () => {
   const result = [];
