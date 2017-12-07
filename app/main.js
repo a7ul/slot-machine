@@ -8,6 +8,7 @@
   };
 
   const retryNewResult = () => {
+    setMessage(null);
     fetchResult().then((response) => {
       const {result, bonus} = response;
       setResultOnUI(result);
@@ -48,12 +49,9 @@
       return;
     }
     setMessage('You have a bonus !!');
-    retryBtn.style['pointer-events']='none';
+    retryBtn.style['pointer-events']='none'; //disabling retry button
     retryBtn.style.opacity = 0.3;
-    setTimeout(() => {
-      setMessage(null);
-      retryNewResult();
-    }, 500); //added timeout so that we can see the result
+    setTimeout(retryNewResult, 500); //added timeout so that we can see the result
   };
 
   const setMessage = (message) => {
