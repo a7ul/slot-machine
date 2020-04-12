@@ -8,13 +8,6 @@ A game written in pure Javascript and Node JS
 
 To Play :
 
-(Hosted on Heroku)
-
-https://goo.gl/a2SJiF or https://slot-machine.herokuapp.com/public/index.html
-
-
-or
-
 
 1. `git clone https://github.com/master-atul/slot-machine.git`
 2. `yarn install` or `npm install`
