@@ -13,7 +13,7 @@
   "author": "master-atul",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^4.12.1",
+    "eslint": "^4.18.2",
     "eslint-plugin-node": "^5.2.1"
   }
 }
