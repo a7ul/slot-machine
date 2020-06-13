@@ -1,5 +1,6 @@
 const url = require('url');
 const {randomResultHandler, staticFileHandler, notFoundHandler} = require('./handlers');
+const { randIntGenerator } = require('./helpers')
 
 const router = (req, res) => {
   const {pathname} = url.parse(req.url);
@@ -21,6 +22,11 @@ const router = (req, res) => {
         res.setHeader('Content-Type', 'application/json');
         res.end(JSON.stringify(err));
       });
+    }
+    case 'random-test': {
+      let arr = []
+      for (let i=0; i<100; ++i) arr.push(randIntGenerator(2,5))
+      return res.end(JSON.stringify( arr ))
     }
     default:{
       res.statusCode = 404;
