@@ -2,7 +2,7 @@ const path = require('path');
 const fs  = require('fs');
 
 const randIntGenerator = (min, max) => {
-  const randomFloat = (Math.random() * (max + 1)) + min;
+  const randomFloat = (Math.random() * (max - min + 1)) + min;
   return parseInt(randomFloat);
 };
 
